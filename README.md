@@ -1,6 +1,6 @@
 # nothing-ear-rust
 
-A Rust command-line utility to fetch the battery information of Nothing Ear devices.
+A **reverse-engineered** Rust command-line utility to fetch the battery information of Nothing Ear devices.
 
 ## Overview
 
@@ -115,6 +115,7 @@ The utility handles potential errors during:
 
 -   Currently, the utility is designed for Linux systems with the `bluez` Bluetooth stack.
 -   It relies on specific constants (`EAR_ADDRESS`, `EAR_CHANNEL`, `EAR_BATTERY`) that might be subject to change with firmware updates or different Nothing Ear models.
+-   Similarly, this whole protocol is reverse-engineered and might not be accurate or complete. Nothing can change the protocol at any time, rendering this utility useless.
 
 ## Contributing
 
