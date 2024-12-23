@@ -90,7 +90,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         println!("{}", serde_json::to_string_pretty(&json_output)?);
 
     } else {
-        let json_output = json!({"error": "Ear 2 not detected"});
+        let json_output = json!({"error": "Ear not detected"});
         println!("{}", serde_json::to_string(&json_output)?);
     }
 
